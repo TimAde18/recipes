@@ -1,0 +1,115 @@
+/*try to make this mandatory*/
+* { 
+    margin: 0;
+    padding: 0;
+}
+/*not my code this was looked up for the nav bar*/
+header {
+    background-color: rgb(34, 102, 70);
+    /*border-bottom: 20px solid rgb(158, 25, 25);*/
+    
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+nav {
+    float: right;
+    
+}
+
+nav ul {
+    padding: 10px;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 170px;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+nav a {
+    color: rgb(212, 0, 40);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+nav a:hover {
+    color: rgb(158, 25, 25);
+}
+
+nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: rgb(158, 25, 25);
+
+    position: absolute;
+    top: 0;
+    width: 0;
+
+    transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+
+/*My code*/
+
+
+
+main {
+    margin: 20px 100px 0 100px;
+    line-height: 1.5;
+}
+
+.wrap h2, .alfredo h2 {
+    position: relative;
+    right: 858px;
+    top: 40px;
+}
+
+.intro {
+    text-align: center;
+    border-bottom: 1px solid black;
+    margin-bottom: 40px;
+}
+
+.image {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.wrap .image {
+    margin-top: 40px;
+}
+
+.ingredients {
+    float: left;
+    width: 50%;
+    margin-bottom: 5px;
+}
+
+.instructions {
+    float: right;
+    width: 50%;
+}
+
+.oats, .wrap, .alfredo {
+    border-bottom: 1px solid black;
+}
+
+.credit {
+    position: relative;
+    top: 10px;
+    margin: 10px 0 25px 0;
+    
+}
